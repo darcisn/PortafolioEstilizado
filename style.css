@@ -1,0 +1,168 @@
+/* Estilos bases  */
+* { padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+    color: #2e2e2e;
+    line-height: 1.6;
+
+ }
+
+ /* Colores principales */
+   :root {
+    --color-pp: #808080;
+    --color-po:#800000;
+    --color-pi: #FF0000; 
+    --color-pu: #ffffff;
+    --color-pa: #000000;
+    --color-azul: #3498db;
+}
+
+ /* Fondo principal */
+body {
+    background-color: var(--color-background);
+    color: var(--color-pa);
+}
+
+ /* Estos son los estilos para el header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid var(--color-pp);
+    margin: 2rem;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-pa);
+    margin-bottom: 0.5rem;
+
+}
+
+/* Estos son los estilos para el nava a */
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--color-pa);
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: var(--color-pp);
+    bottom: -2px;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    
+    width: 100%;
+}
+
+section[role="#dialogo"] {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+section image {
+    max-width: 600px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Los titulos*/
+h5 {
+    font-size: 1.8rem;
+    color: var(--color-pa);
+    padding-left: 1rem;
+    border-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-size: 1.2rem;
+    color: var(--color-po);
+    margin-top: 0.5rem;
+}
+
+span {
+    display: block;
+    font-weight: 500;
+    color: var(--color-pp);
+    margin-bottom: 0.5rem;
+}
+
+/* Las listas*/
+ul,
+ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+a[download] {
+    display: inline-block;
+    background-color: var(--color-pi);
+    color:#ffffff;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+a[download]:hover {
+    background-color: #800000;
+}
+
+
+#Proyectos>div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    background-color: var(--color-azul);
+    padding: 1rem;
+    border-radius: 16px;
+    align-items: center;
+    box-shadow: 0 20px 10px rgba;
+}
+
+details {
+    margin: 1rem;
+    border-left: 4px solid var(--color-po);
+    border-radius: 8px;
+    padding: 1rem;
+
+}
+
+.ph5 {
+    margin: 3rem 0;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--color-azul);
+    border-top: 2px solid var(--color-pi);
+}
+
+
+footer h4 {
+    font-weight: normal;
+    color: var(--color-po);
+    margin-bottom: 0.9rem;
+}
